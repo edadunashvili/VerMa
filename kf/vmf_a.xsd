@@ -232,6 +232,8 @@
 <xs:enumeration value="ATU_560 Zauberring"/>
 <xs:enumeration value="e560"/>
 <xs:enumeration value="a560"/>
+<xs:enumeration value="ATU_562 Geist im blauen Licht"/>
+<xs:enumeration value="a562"/>
 <xs:enumeration value="e563"/>
 <xs:enumeration value="a563"/>
 <xs:enumeration value="ATU_563 Tischleindeckdich"/>

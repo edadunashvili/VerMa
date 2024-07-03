@@ -10,6 +10,7 @@
 <xs:restriction base="xs:normalizedString">
 
 <xs:enumeration value=""/>
+<xs:enumeration value="sandwich"/>
 <xs:enumeration value="Abraten_von_der_Mission"/>
 <xs:enumeration value="Abtretung_steht_bevor"/>
 <xs:enumeration value="Adoption"/>
