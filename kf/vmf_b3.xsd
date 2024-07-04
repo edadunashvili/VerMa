@@ -8,7 +8,8 @@
  
 <xs:enumeration value="N"/>
 <xs:enumeration value=""/>
-
+   <xs:enumeration value="sandwich"/>
+   
 
 <xs:enumeration value="F"/>
 <xs:enumeration value="f"/>
@@ -18,6 +19,8 @@
 <xs:enumeration value="h"/>
 <xs:enumeration value="Hh"/>
 
+   <xs:enumeration value="HF"/>
+   <xs:enumeration value="hf"/>
 
 <xs:enumeration value="unklar"/>
 
