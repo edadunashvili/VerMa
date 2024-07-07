@@ -211,7 +211,7 @@
 <xs:enumeration value="MISSETAT_wie_Hinterhalt"/>
 <xs:enumeration value="MISSETAT_wie_Jemanden_im_Stich_lassen"/>
 <xs:enumeration value="MISSETAT_wie_Kannibalismus"/>
-<xs:enumeration value="MISSETAT_wie_Tötung"/>
+<xs:enumeration value="MISSETAT_wie_TÖTUNG"/>
 <xs:enumeration value="MISSETAT_wie_Vergiftung_versuchen"/>
 <xs:enumeration value="Missgeburt"/>
 <xs:enumeration value="Mitleidsgefühl_auslösen"/>
