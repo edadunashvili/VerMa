@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema elementFormDefault="qualified" targetNamespace="www.dglab.uni-jena.de/vmf/d" vc:maxVersion="1.1" vc:minVersion="1.0" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:d="www.dglab.uni-jena.de/vmf/d">
+   
 <xs:attribute name="ana" type="d:ana">
 <xs:annotation>
-<xs:documentation><p>HD - Held</p><p>OB - Objekt</p><p>AN - Antagonist</p><p>ST - Stifter</p><p>HF - Helfer</p><p>ZM - Zaubermittel</p><p>FH - Falscher Held</p><p>HO - Herr des Objektes</p><p>AG - Auftraggeber</p><p>VB - Verbindende Person</p><p>RC - Rächender</p></xs:documentation>
+<xs:documentation><p>Die Reihefolge der Figuren:</p><p>Zaubermährchen:</p><p>rHD - rHH - rHF - rRE - rST - rVB - rBZ - rZO - rHP - rPP - rAN - rZM - fHD - fHH - fHF - fRE - fST - fVB - fBZ - fZO - fHP - fPP - fAN - fZM </p><p>Tiermärchen, Novellenartige Erzählungen und Schwänke:</p><p>zs - zsa - zt - zta - zf - zfa - zv - zva</p></xs:documentation>
 </xs:annotation>
 </xs:attribute>
 <xs:simpleType name="ana">
 <xs:restriction base="xs:normalizedString">
+   <xs:enumeration value="#"/>
+   <xs:enumeration value="N"/>
+   <xs:enumeration value="z"/>
+   
+   <xs:enumeration value="zs"/>
+   <xs:enumeration value="zsa"/>
+   <xs:enumeration value="zt"/>
+   <xs:enumeration value="zta"/>
+   <xs:enumeration value="zf"/>
+   <xs:enumeration value="zfa"/>
+   <xs:enumeration value="zv"/>
+   <xs:enumeration value="zva"/>
+   
+<xs:enumeration value="zs_zs"/>
+   <xs:enumeration value="zs_zsa"/>
+   <xs:enumeration value="zs_zt"/>
+   <xs:enumeration value="zs_zta"/>
+   <xs:enumeration value="zs_zf"/>
+   <xs:enumeration value="zs_zfa"/>
+   
+<xs:enumeration value="zt_zt"/>
+   <xs:enumeration value="zt_zsa"/>
+   <xs:enumeration value="zt_zta"/>
+   <xs:enumeration value="zt_zf"/>
+   <xs:enumeration value="zt_zfa"/>
 
-
-<xs:enumeration value="N"/>
-   <xs:enumeration value="Molla"/>
+   <xs:enumeration value="zf_zfa"/>
+   <xs:enumeration value="zf_zsa"/>
+   
+   <xs:enumeration value="zsa_zta"/>
+   <xs:enumeration value="zsa_zfa"/>
+   <xs:enumeration value="zta_zfa"/>
+  
+   <xs:enumeration value="zs_zt_zf"/>
+   <xs:enumeration value="zs_zt_zfa"/>
+   <xs:enumeration value="zs_zt_zta"/>
+   <xs:enumeration value="zs_zt_zsa"/>
+   <xs:enumeration value="zs_zf_zsa"/>
+   <xs:enumeration value="zs_zf_zfa"/>
+   
+   <xs:enumeration value="zt_zf_zta"/>
+   <xs:enumeration value="zt_zf_zfa"/>
+   <xs:enumeration value="zt_zf_zsa"/>
+   
+   <xs:enumeration value="zs_zsa_zta"/>
+   <xs:enumeration value="zt_zsa_zta"/>
+   <xs:enumeration value="zta_zta"/>
+   <xs:enumeration value="zv_zv"/>
+   
+ 
 <xs:enumeration value="rHD"/>
 <xs:enumeration value="rHH"/>
 <xs:enumeration value="rHF"/>

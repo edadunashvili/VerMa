@@ -1,431 +1,2720 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema elementFormDefault="qualified" targetNamespace="www.dglab.uni-jena.de/vmf/c3" vc:maxVersion="1.1" vc:minVersion="1.0" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:c3="www.dglab.uni-jena.de/vmf/c3">
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:c3="www.dglab.uni-jena.de/vmf/c3" elementFormDefault="qualified" targetNamespace="www.dglab.uni-jena.de/vmf/c3" vc:maxVersion="1.1" vc:minVersion="1.0">
 <xs:attribute name="ana" type="c3:ana"/>
 <xs:simpleType name="ana">
 
-
-<!---->
-<xs:list>
-<xs:simpleType>
-<xs:restriction base="xs:normalizedString">
-<xs:enumeration value=""/>
-<xs:enumeration value="ABRATEN_von_der_Mission"/>
-<xs:enumeration value="Abtretung_der_Schönen_stehet_bevor"/>
-<xs:enumeration value="Adoption_erfolgt"/>
-<xs:enumeration value="AMUSEMENT"/>
-<xs:enumeration value="An_einen_AUSWEGLOSEN_Ort_gelangen"/>
-<xs:enumeration value="An_Königswahl_teilnehmen"/>
-<xs:enumeration value="Änderung_der_EXISTENZFORM_beheben"/>
-<xs:enumeration value="ANEIGNEN_beheben"/>
-<xs:enumeration value="Angebliche_Testnotwendigkeit_VORTÄUSCHEN"/>
-<xs:enumeration value="ANGEBOT_geopfert_zu_werden"/>
-<xs:enumeration value="Angebot_KÖNIG_ZU_WERDEN"/>
-<xs:enumeration value="ANGEBOT_nachgehen"/>
-<xs:enumeration value="Angst_mit_Angst_vergelten"/>
-<xs:enumeration value="Auf_dem_Heimweg"/>
-<xs:enumeration value="Auf_dem_VERTRAG_bestehen"/>
-<xs:enumeration value="Auf_Hilfsquelle_zurückgreifen"/>
-<xs:enumeration value="Auftrag_zum_AUSSPIONIEREN_erteilen"/>
-<xs:enumeration value="Auftrag_zum_Kochen"/>
-<xs:enumeration value="Auslösen_von_FERNLIEBE"/>
-<xs:enumeration value="AUSRÜSTUNG_als_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="AUSSETZUNG"/>
-<xs:enumeration value="Baumersteigen"/>
-<xs:enumeration value="Bauwerk_errichten"/>
-<xs:enumeration value="Begehren_einer_Person_oder_eines_Gegenstandes"/>
-<xs:enumeration value="BEHINDERUNG_durch_einen_Fluch"/>
-<xs:enumeration value="BEHINDERUNG_durch_Verstümmelung"/>
-<xs:enumeration value="BESITZER_DES_OBJEKTES_erfassen"/>
-<xs:enumeration value="BESITZER_DES_OBJEKTES_herbeiholen"/>
-<xs:enumeration value="Bestrafung_erfolgt"/>
-<xs:enumeration value="BEUTETEILEN"/>
-<xs:enumeration value="BOTSCHAFTEN_verfälschen"/>
-<xs:enumeration value="BOTSCHAFTEN_versenden"/>
-<xs:enumeration value="Das_Geheimnis_des_Erwerbs_der_EXTERNEN_SEELE_AUSSPIONIEREN"/>
-<xs:enumeration value="Das_Geheimnis_des_Erwerbs_des_BESONDEREN_Gegenstandes_AUSSPIONIEREN"/>
-<xs:enumeration value="Das_Geheimnis_des_Erwerbs_des_REITTIERs_AUSSPIONIEREN"/>
-<xs:enumeration value="Dem_ABRATEN_von_der_Mission_nachgehen"/>
-<xs:enumeration value="Dem_AMUSEMENT_nachgehen"/>
-<xs:enumeration value="Dem_Angebot_KÖNIG_ZU_WERDEN_nachgehen"/>
-<xs:enumeration value="Dem_BEUTETEILEN_nachgehen"/>
-<xs:enumeration value="Dem_SCHICKSAL_entkommen"/>
-<xs:enumeration value="Dem_STAUNEN_nachgehen"/>
-<xs:enumeration value="Dem_VERLUST_entgegentreten"/>
-<xs:enumeration value="Dem_VORTÄUSCHEN_nachgehen"/>
-<xs:enumeration value="DEMÜTIGUNG_des_verleumdeten_Helden"/>
-<xs:enumeration value="Den_ALTERNATIVEN_nachgehen"/>
-<xs:enumeration value="Den_Bösen_die_eigenen_Kinder_fressen_lassen"/>
-<xs:enumeration value="Den_Bösen_die_eigenen_Kinder_schlachten_lassen"/>
-<xs:enumeration value="Den_Bösen_Schaden_anrichten_lassen"/>
-<xs:enumeration value="Den_Einbrecher_begnadigen"/>
-<xs:enumeration value="Den_Vorgang_deuten"/>
-<xs:enumeration value="Der_GIER_nachgehen"/>
-<xs:enumeration value="Der_LIEBE_nachgehen"/>
-<xs:enumeration value="Der_NEUGIER_nachgehen"/>
-<xs:enumeration value="Der_PROVOKATION_nachgehen"/>
-<xs:enumeration value="Der_RESPEKTLOSIGKEIT_entgegentreten"/>
-<xs:enumeration value="Der_VERLOCKUNG_nachgehen"/>
-<xs:enumeration value="Der_Wechsel_der_IDENTITÄT_zugeben"/>
-<xs:enumeration value="Die_Änderung_der_EXISTENZFORM"/>
-<xs:enumeration value="Die_Beschaffung_der_AUSRÜSTUNG"/>
-<xs:enumeration value="Die_Beschaffung_der_AUSRÜSTUNG"/>
-<xs:enumeration value="Die_potenzielle_Beute_begnadigen"/>
-<xs:enumeration value="Die_SCHÖNE_erfassen"/>
-<xs:enumeration value="Die_SCHÖNE_herbeiholen"/>
-<xs:enumeration value="Ein_VERSPRECHEN_halten"/>
-<xs:enumeration value="Eine_Apathie_VORTÄUSCHEN"/>
-<xs:enumeration value="Eine_Bedrohung_VORTÄUSCHEN"/>
-<xs:enumeration value="Eine_BEHINDERUNG_beheben"/>
-<xs:enumeration value="Eine_DEMÜTIGUNG_beheben"/>
-<xs:enumeration value="Eine_ENTFÜHRUNG"/>
-<xs:enumeration value="Eine_ENTFÜHRUNG_beheben"/>
-<xs:enumeration value="Eine_Enttäuschung_auslösen"/>
-<xs:enumeration value="Eine_menschliche_OPFERGABE_verlangen"/>
-<xs:enumeration value="Einem_Gemenge_entkommen"/>
-<xs:enumeration value="Einem_TODESAUFTRAG_entkommen"/>
-<xs:enumeration value="Einen_Begleiter_gewinnen"/>
-<xs:enumeration value="Einen_gold_oder_GELDPRODUZIERENDEN_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Einer_Einladung_folgen"/>
-<xs:enumeration value="Eines_BELEUCHTENDEN_Gegenstandes_habhaft_werden"/>
-<xs:enumeration value="Erlösung"/>
-<xs:enumeration value="Erträumen"/>
-<xs:enumeration value="Erzählen"/>
-<xs:enumeration value="EXTERNEN_SEELE_vernichten"/>
-<xs:enumeration value="Familienzusammenführung"/>
-<xs:enumeration value="fAn"/>
-<xs:enumeration value="Fehlende_männliche_Nachkommen"/>
-<xs:enumeration value="FEHLENDEN_Gegenstand_besorgen"/>
-<xs:enumeration value="FEHLENDEN_Gegenstand_erfassen"/>
-<xs:enumeration value="FELDER_BESTELLEN"/>
-<xs:enumeration value="FELDER_BESTELLEN_anpacken"/>
-<xs:enumeration value="fEn"/>
-<xs:enumeration value="FERNLIEBE_beheben"/>
-<xs:enumeration value="FLUCHT"/>
-<xs:enumeration value="FLUCHT_vorbereiten"/>
-<xs:enumeration value="Flugfähiges_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Folge_von_Arbeitsscheu_deuten"/>
-<xs:enumeration value="Folge_von_Betrügerei_deuten"/>
-<xs:enumeration value="Folge_von_Bigotterie_deuten"/>
-<xs:enumeration value="Folge_von_Geiz_deuten"/>
-<xs:enumeration value="Folge_von_Grobheit_deuten"/>
-<xs:enumeration value="Folge_von_Klatsch_deuten"/>
-<xs:enumeration value="Folge_von_Kriminalität_deuten"/>
-<xs:enumeration value="Folge_von_Vernachlässigung_der_Eltern_deuten"/>
-<xs:enumeration value="Folge_von_verweigerter_Gastfreundschaft_deuten"/>
-<xs:enumeration value="Folge_von_vorehelichem_Geschlechtsverkehr_deuten"/>
-<xs:enumeration value="Folgen_eines_TABUbruches_rückgängig_machen"/>
-<xs:enumeration value="FREIHEITSBERAUBUNG"/>
-<xs:enumeration value="FREIHEITSBERAUBUNG_beheben"/>
-<xs:enumeration value="FRUCHT_besorgen"/>
-<xs:enumeration value="FRUCHT_erfassen"/>
-<xs:enumeration value="Gastfreundlichkeit_VORTÄUSCHEN"/>
-<xs:enumeration value="Geänderte_EXISTENZFORM_VORTÄUSCHEN"/>
-<xs:enumeration value="Gegen_ein_Tier_kämpfen"/>
-<xs:enumeration value="Gegenleistung_für_Hilfe_gewähren"/>
-<xs:enumeration value="Geheime_Liebesbeziehung"/>
-<xs:enumeration value="Geheimnis_aufklären"/>
-<xs:enumeration value="Geschlechtsumwandlung_erzielen"/>
-<xs:enumeration value="Gespräche_belauschen"/>
-<xs:enumeration value="GIER"/>
-<xs:enumeration value="Goldhaariges_Kind_zur_Welt_bringen"/>
-<xs:enumeration value="Große_Mengen_ESSEN"/>
-<xs:enumeration value="Gutes_Benehmen"/>
-<xs:enumeration value="Handlungsanweisungen_aus_zweiter_Hand"/>
-<xs:enumeration value="Handlungsanweisungen_missachten"/>
-<xs:enumeration value="Hartes_Großes_Mächtiges_mit_Weichem_Kleinem_Schwachem_bewältigen"/>
-<xs:enumeration value="Heilkunst_VORTÄUSCHEN"/>
-<xs:enumeration value="HEILMITTEL_besorgen"/>
-<xs:enumeration value="HEILMITTEL_erfassen"/>
-<xs:enumeration value="Heimlich_beobachten"/>
-<xs:enumeration value="Heiraten"/>
-<xs:enumeration value="Heiratszusage_erpressen"/>
-<xs:enumeration value="Held_erkennen"/>
-<xs:enumeration value="Heldentat_VORTÄUSCHEN"/>
-<xs:enumeration value="HERBEIRUFENDES_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Hilfe_erpressen"/>
-<xs:enumeration value="Hilfeversprechen_erhalten"/>
-<xs:enumeration value="Hitze_entkommen"/>
-<xs:enumeration value="HOCHZEIT_verschieben"/>
-<xs:enumeration value="Hohlen_Gegenstand_zum_Verstecken_erhalten"/>
-<xs:enumeration value="HOLZ_besorgen"/>
-<xs:enumeration value="HOLZ_Sammeln_anpacken"/>
-<xs:enumeration value="IDENTITÄT_ändern"/>
-<xs:enumeration value="IDENTITÄT_beweisen"/>
-<xs:enumeration value="Im_Mausoleum_ruhen_lassen"/>
-<xs:enumeration value="Im_Verborgenen_lauern"/>
-<xs:enumeration value="In_den_Krieg_ziehen"/>
-<xs:enumeration value="Jenseitswanderung_unternehmen"/>
-<xs:enumeration value="JUWELEN_besorgen"/>
-<xs:enumeration value="JUWELEN_erfassen"/>
-<xs:enumeration value="Kälte_entkommen"/>
-<xs:enumeration value="Kinderlosigkeit"/>
-<xs:enumeration value="Knochen_begraben"/>
-<xs:enumeration value="Kollaborationsbereitschaft_VORTÄUSCHEN"/>
-<xs:enumeration value="Kollaborationsbereitschaft_VORTÄUSCHEN"/>
-<xs:enumeration value="Komplikationsfreier_Flug"/>
-<xs:enumeration value="KONTAKT_abbrechen"/>
-<xs:enumeration value="KONTAKT_wiederherstellen"/>
-<xs:enumeration value="KRANKHEIT"/>
-<xs:enumeration value="KRANKHEIT_beheben"/>
-<xs:enumeration value="Krankheit_VORTÄUSCHEN"/>
-<xs:enumeration value="Krisenursachen_ergründen"/>
-<xs:enumeration value="Letzte_Gelegenheit_nützen"/>
-<xs:enumeration value="LIEBE_wird_ausgelöst"/>
-<xs:enumeration value="Lösung_für_das_LEIDENDE_TIER_deuten"/>
-<xs:enumeration value="Lösung_für_das_LEIDENDE_TIER_nachgehen"/>
-<xs:enumeration value="Lösung_für_den_FÄHRMANN_deuten"/>
-<xs:enumeration value="Lösung_für_den_FÄHRMANN_nachgehen"/>
-<xs:enumeration value="Lösung_für_HEIRATSWILLIGE_deuten"/>
-<xs:enumeration value="Lösung_für_HEIRATSWILLIGE_nachgehen"/>
-<xs:enumeration value="Lösung_für_HEIRATSWILLIGE_nachgehen"/>
-<xs:enumeration value="Lösung_für_SCHATZHÜTER_deuten"/>
-<xs:enumeration value="Lösung_für_SCHATZHÜTERN_nachgehen"/>
-<xs:enumeration value="Lösung_für_SCHATZHÜTERN_nachgehen"/>
-<xs:enumeration value="Magische_EMPFÄNGNISmittel_erfassen"/>
-<xs:enumeration value="Magische_EMPFÄNGNISmittel_erhalten"/>
-<xs:enumeration value="Magische_EMPFÄNGNISmittel_suchen"/>
-<xs:enumeration value="MARKIERUNGEN_anbringen"/>
-<xs:enumeration value="MARKIERUNGEN_erkennen"/>
-<xs:enumeration value="MASSENBEDROHUNG"/>
-<xs:enumeration value="MASSENBEDROHUNG_beheben"/>
-<xs:enumeration value="Mehrere_Aufgaben_in_Folge_erledigen"/>
-<xs:enumeration value="Mehrere_Gegner_nacheinander_besiegen"/>
-<xs:enumeration value="Mehrlingsgeburt_erfolgt"/>
-<xs:enumeration value="MEINEID_erpressen"/>
-<xs:enumeration value="MEINEID_erpressen_beheben"/>
-<xs:enumeration value="Menschliche_Körperteile_in_Edelmetall_verwandeln"/>
-<xs:enumeration value="Menschliche_OPFERGABE_beheben"/>
-<xs:enumeration value="MILCH_besorgen"/>
-<xs:enumeration value="MILCH_erfassen"/>
-<xs:enumeration value="Missachtung_der_LIEBE"/>
-<xs:enumeration value="Missachtung_der_LIEBE_beheben"/>
-<xs:enumeration value="MISSETAT_beheben"/>
-<xs:enumeration value="MISSETAT_ein_Surrogat_unterschieben"/>
-<xs:enumeration value="MISSETAT_planen"/>
-<xs:enumeration value="MISSETAT_wie_Aneignung"/>
-<xs:enumeration value="MISSETAT_wie_Behinderung"/>
-<xs:enumeration value="MISSETAT_wie_ein_Surrogat_unterschieben"/>
-<xs:enumeration value="MISSETAT_wie_Entmachtung"/>
-<xs:enumeration value="MISSETAT_wie_Falle_stellen"/>
-<xs:enumeration value="MISSETAT_wie_Hinterhalt"/>
-<xs:enumeration value="MISSETAT_wie_Jemanden_im_Stich_lassen"/>
-<xs:enumeration value="MISSETAT_wie_Kannibalismus"/>
-<xs:enumeration value="MISSETAT_wie_TÖTUNG"/>
-<xs:enumeration value="MISSETAT_wie_Vergiftung_versuchen"/>
-<xs:enumeration value="Missgeburt"/>
-<xs:enumeration value="Mitleidsgefühl_auslösen"/>
-<xs:enumeration value="MUSIKINSTRUMENT_besorgen"/>
-<xs:enumeration value="MUSIKINSTRUMENT_erfassen"/>
-<xs:enumeration value="Mut_zeigen"/>
-<xs:enumeration value="N"/>
-<xs:enumeration value="Nahrungsvorrat_aufgebraucht"/>
-<xs:enumeration value="Nahrungsvorrat_aufgebraucht"/>
-<xs:enumeration value="NEUGIER_auslösen"/>
-<xs:enumeration value="Notwendiges_auf_wunderbare_Weise_besorgen"/>
-<xs:enumeration value="NUTZTIER_besorgen"/>
-<xs:enumeration value="NUTZTIER_erfassen"/>
-<xs:enumeration value="Ortswechsel_erfolgreich_durchführen"/>
-<xs:enumeration value="Ortswechsel_erfolgreich_durchführen"/>
-<xs:enumeration value="PARALYSIERUNG"/>
-<xs:enumeration value="PARALYSIERUNG_beheben"/>
-<xs:enumeration value="PFLANZE_besorgen"/>
-<xs:enumeration value="PFLANZE_erfassen"/>
-<xs:enumeration value="Pförtner_besänftigen"/>
-<xs:enumeration value="PFÖRTNER_entkommen"/>
-<xs:enumeration value="PFÖRTNER_täuschen"/>
-<xs:enumeration value="Potenziellen_Feind_zum_Gastgeber_gewinnen"/>
-<xs:enumeration value="Prächtige_Kleidung_und_Schmuck_erhalten"/>
-<xs:enumeration value="PROVIANTPRODUZIERENDEN_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="PROVOKATION"/>
-<xs:enumeration value="Rebellion_des_Zielobjektes_VORTÄUSCHEN"/>
-<xs:enumeration value="Reiche_Erbschaft_VORTÄUSCHEN"/>
-<xs:enumeration value="Reichtum_VORTÄUSCHEN"/>
-<xs:enumeration value="Reitkünste_zeigen"/>
-<xs:enumeration value="REITTIER_besorgen"/>
-<xs:enumeration value="REITTIER_besorgen"/>
-<xs:enumeration value="REITTIER_erfassen"/>
-<xs:enumeration value="REITTIER_erfassen"/>
-<xs:enumeration value="REITTIER_erhalten"/>
-<xs:enumeration value="RESPEKTLOSIGKEIT"/>
-<xs:enumeration value="Richtiges_auswählen"/>
-<xs:enumeration value="Richtiges_erlangen"/>
-<xs:enumeration value="Sachverhalt_aus_der_Vergangenheit_aufklären"/>
-<xs:enumeration value="sandwich"/>
-<xs:enumeration value="Schatz_entdecken"/>
-<xs:enumeration value="SCHICKSAL_abwenden"/>
-<xs:enumeration value="Schicksalsbestimmender_Weisung_folgen"/>
-<xs:enumeration value="SCHLAF"/>
-<xs:enumeration value="SCHLAF_unterbrechen"/>
-<xs:enumeration value="Schrecken_auslösen"/>
-<xs:enumeration value="SCHWEIGEPFLICHT_beheben"/>
-<xs:enumeration value="SCHWEIGEPFLICHT_verhängen"/>
-<xs:enumeration value="SELTENEN_Gegenstand_besorgen"/>
-<xs:enumeration value="SELTENEN_Gegenstand_erfassen"/>
-<xs:enumeration value="Sich_abseilen_LASSEN"/>
-<xs:enumeration value="Sich_auf_Eindringlinge_einlassen"/>
-<xs:enumeration value="Sich_einem_magischen_Eingriff_unterziehen"/>
-<xs:enumeration value="Sich_oder_Andere_hochziehen_LASSEN"/>
-<xs:enumeration value="Sich_oder_andere_tragen_LASSEN"/>
-<xs:enumeration value="Sich_sonstige_Dinge_ANEIGNEN"/>
-<xs:enumeration value="Sich_ZAUBERMITTEL_ANEIGNEN"/>
-<xs:enumeration value="Sich_ZAUBERMITTEL_ANEIGNEN"/>
-<xs:enumeration value="Sich_ZAUBERMITTEL_ANEIGNEN"/>
-<xs:enumeration value="Sich_ZAUBERMITTEL_ANEIGNEN"/>
-<xs:enumeration value="SONSTIGE_AUFGABE_anpacken"/>
-<xs:enumeration value="SONSTIGE_AUFGABE_erledigen"/>
-<xs:enumeration value="Sorge_um_Freikaufsbedürftige"/>
-<xs:enumeration value="Sorge_um_Hilfsbedürftige"/>
-<xs:enumeration value="Sorge_um_Hungernde_oder_Durstige"/>
-<xs:enumeration value="Sorge_um_Pflegebedürftige"/>
-<xs:enumeration value="Sorge_um_Schutzbedürftige"/>
-<xs:enumeration value="Stifter_oder_Helfer_gewinnen"/>
-<xs:enumeration value="Strafvollstreckenden_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Streit_schlichten"/>
-<xs:enumeration value="TABU_Behälter_nicht_öffnen"/>
-<xs:enumeration value="TABU_brechen"/>
-<xs:enumeration value="TABU_Feuer_darf_nicht_erlöschen"/>
-<xs:enumeration value="TABU_Frist_nicht_überziehen"/>
-<xs:enumeration value="TABU_Gegenstand_nicht_weitergeben"/>
-<xs:enumeration value="TABU_Haus_nicht_verlassen_dürfen"/>
-<xs:enumeration value="TABU_keine_Eindringlinge_einlassen"/>
-<xs:enumeration value="TABU_keine_Pause_machen"/>
-<xs:enumeration value="TABU_Land_nicht_betreten"/>
-<xs:enumeration value="TABU_nicht_einschlafen_dürfen"/>
-<xs:enumeration value="TABU_nicht_küssen"/>
-<xs:enumeration value="TABU_Schweigegebot"/>
-<xs:enumeration value="TABU_sich_von_Etwas_fernhalten"/>
-<xs:enumeration value="TABU_sich_von_Jemandem_fernhalten"/>
-<xs:enumeration value="TABU_Sonstiges"/>
-<xs:enumeration value="TABU_Tier_nicht_töten"/>
-<xs:enumeration value="TABU_Tierhaut_nicht_verbrennen"/>
-<xs:enumeration value="TABU_Türe_nicht_öffnen_dürfen"/>
-<xs:enumeration value="Tapferkeit_beweisen"/>
-<xs:enumeration value="Tarnung_gewährendes_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Tier_als_Schutzgeist_erhalten"/>
-<xs:enumeration value="Tiere_gegeneinander_kämpfen_lassen"/>
-<xs:enumeration value="Tiere_HÜTEN"/>
-<xs:enumeration value="Tiere_HÜTEN_anpacken"/>
-<xs:enumeration value="Tiere_MÄSTEN"/>
-<xs:enumeration value="Tiere_MÄSTEN_anpacken"/>
-<xs:enumeration value="Tierjunges_erhalten"/>
-<xs:enumeration value="TIERKÖRPERTEIL_besorgen"/>
-<xs:enumeration value="TIERKÖRPERTEIL_erfassen"/>
-<xs:enumeration value="Tod_von_Angehörigen"/>
-<xs:enumeration value="Tod_VORTÄUSCHEN"/>
-<xs:enumeration value="TODESAUFTRAG"/>
-<xs:enumeration value="TÖTUNG"/>
-<xs:enumeration value="TÖTUNG_beheben"/>
-<xs:enumeration value="Traum_vom_sozialen_Aufstieg"/>
-<xs:enumeration value="Treue_VORTÄUSCHEN"/>
-<xs:enumeration value="TREUEN_HELFER_erhalten"/>
-<xs:enumeration value="TREUEN_HELFER_finden"/>
-<xs:enumeration value="Truhe_herstellen"/>
-<xs:enumeration value="Turm_Zaun_oder_Berg_hinaufsteigen"/>
-<xs:enumeration value="Überraschende_positive_Wendung"/>
-<xs:enumeration value="Überrascht_werden"/>
-<xs:enumeration value="Um_eine_Frau_werben"/>
-<xs:enumeration value="Um_einen_Auftrag_werben"/>
-<xs:enumeration value="Um_einen_Mann_werben"/>
-<xs:enumeration value="Um_Gegenleistung_bitten"/>
-<xs:enumeration value="Unerträgliche_Unersättlichkeit"/>
-<xs:enumeration value="Unerträgliche_Ungeheuerlichkeit"/>
-<xs:enumeration value="UNGEHEUER_erfassen"/>
-<xs:enumeration value="UNGEHEUER_herbeiholen"/>
-<xs:enumeration value="ungewollte_VERLOBUNG"/>
-<xs:enumeration value="Ungewolltem_HEIRATSANTRAG_nachgehen"/>
-<xs:enumeration value="Ungewollter_HEIRATSANTRAG"/>
-<xs:enumeration value="ungewollter_VERLOBUNG_nachgehen"/>
-<xs:enumeration value="Ungewünschtes_Wesen_beseitigen"/>
-<xs:enumeration value="Universellen_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Universellen_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="unklar"/>
-<xs:enumeration value="Unwissenheit_oder_Unsicherheit_VORTÄUSCHEN"/>
-<xs:enumeration value="Ursache_des_Altaussehens_deuten"/>
-<xs:enumeration value="Ursache_des_unstillbaren_Dursts_deuten"/>
-<xs:enumeration value="Ursache_des_unstillbaren_Hungers_deuten"/>
-<xs:enumeration value="VERBANNUNG"/>
-<xs:enumeration value="VERBANNUNG_beheben"/>
-<xs:enumeration value="VERFOLGUNG"/>
-<xs:enumeration value="VERFOLGUNG_entkommen"/>
-<xs:enumeration value="VERFOLGUNG_verzögern"/>
-<xs:enumeration value="VERLEUMDUNG_beheben"/>
-<xs:enumeration value="VERLEUMDUNG_beheben"/>
-<xs:enumeration value="VERLEUMDUNG_bei_Kindstötung"/>
-<xs:enumeration value="VERLEUMDUNG_bei_Schädigung"/>
-<xs:enumeration value="VERLEUMDUNG_bei_Untreue"/>
-<xs:enumeration value="Verlobung_wird_arrangiert"/>
-<xs:enumeration value="VERLOCKUNG"/>
-<xs:enumeration value="VERLUST_von_Tieren_Früchten_Ernte_usw_"/>
-<xs:enumeration value="Verlust_VORTÄUSCHEN"/>
-<xs:enumeration value="Vermittlung_erhalten"/>
-<xs:enumeration value="VERSCHLINGEN"/>
-<xs:enumeration value="VERSCHLINGEN_beheben"/>
-<xs:enumeration value="VERSPRECHEN_im_Austausch_für_Hilfe"/>
-<xs:enumeration value="Verstecken_als_Rettung"/>
-<xs:enumeration value="VERSTECKWETTE"/>
-<xs:enumeration value="VERSTECKWETTE_anpacken"/>
-<xs:enumeration value="VERSTEINERUNG"/>
-<xs:enumeration value="VERSTEINERUNG_beheben"/>
-<xs:enumeration value="VERTRAG_abschließen"/>
-<xs:enumeration value="VERTRAG_auflösen"/>
-<xs:enumeration value="VERTRAUEN_beweisen"/>
-<xs:enumeration value="VERTRAUEN_prüfen"/>
-<xs:enumeration value="VERTREIBUNG"/>
-<xs:enumeration value="VERTREIBUNG_beheben"/>
-<xs:enumeration value="VOGEL_erfassen"/>
-<xs:enumeration value="VOGEL_herbeiholen"/>
-<xs:enumeration value="Von_einem_AUSWEGLOSEN_Ort_entkommen"/>
-<xs:enumeration value="Vorhersagen_treffen"/>
-<xs:enumeration value="Wache_halten"/>
-<xs:enumeration value="Wachsamkeit_oder_Anwesenheit_VORTÄUSCHEN"/>
-<xs:enumeration value="WAFFE_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="WASSERMANGEL"/>
-<xs:enumeration value="WASSERMANGEL_beheben"/>
-<xs:enumeration value="Wegweisung_erpressen"/>
-<xs:enumeration value="Wegweisung_mit_ALTERNATIVEN"/>
-<xs:enumeration value="WEIHE_anordnen"/>
-<xs:enumeration value="WEIHE_vollziehen"/>
-<xs:enumeration value="WEISHEITEN_erhalten"/>
-<xs:enumeration value="WEISHEITEN_nachgehen"/>
-<xs:enumeration value="Weiterverweisung_an_anderen_Stifter_oder_Helfer"/>
-<xs:enumeration value="Wette_um_die_Verführung_der_Braut"/>
-<xs:enumeration value="WETTKAMPF"/>
-<xs:enumeration value="WETTKAMPF_anpacken"/>
-<xs:enumeration value="WETTLAUF"/>
-<xs:enumeration value="WETTLAUF_anpacken"/>
-<xs:enumeration value="Wiedergutmachung_erpressen"/>
-<xs:enumeration value="WILD_besorgen"/>
-<xs:enumeration value="WILD_erfassen"/>
-<xs:enumeration value="Wunderbare_EMPFÄNGNIS"/>
-<xs:enumeration value="Wunsch_erfüllendes_ZAUBERMITTEL_erhalten"/>
-<xs:enumeration value="Zauberkunst_erlernen"/>
-<xs:enumeration value="Zauberkunstfertigkeit_gewährleisten"/>
-<xs:enumeration value="ZAUBERMITTEL_AUSRÜSTUNG_oder_WAFFE_ausprobieren"/>
-<xs:enumeration value="ZAUBERMITTEL_AUSRÜSTUNG_oder_WAFFE_einsetzen"/>
-<xs:enumeration value="ZOLLERHEBUNG_anpacken"/>
-<xs:enumeration value="ZOLLERHEBUNG_vollstrecken"/>
-<xs:enumeration value="Zu_Beauftragungen_anregen"/>
-<xs:enumeration value="Zug_von_Reisenden_oder_Karavane_folgen"/>
-<xs:enumeration value="Zum_Schlafen_bringen"/>
-<xs:enumeration value="Zum_STAUNEN_bringen"/>
-<xs:enumeration value="Zur_Welt_kommen"/>
-<xs:enumeration value="Zusammenbringen_aller_Handlungsträger"/>
-<xs:enumeration value="Zuschnappendes_Hindernis_überwinden"/>
-<xs:enumeration value="ZWANGSEHE_Drohung"/>
-<xs:enumeration value="ZWANGSEHE_Drohung_beheben"/>
-<xs:enumeration value="Zweikampf"/>
-<xs:enumeration value="Ende"/>
-
-</xs:restriction>
-</xs:simpleType>
-</xs:list>
-<!---->
-
-
-
-
-
+<xs:restriction base="xs:string">
+  <xs:enumeration value="#">
+        <xs:annotation>
+          <xs:documentation>Gilt als Platzhalter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+       <xs:enumeration value="Abraten_von_der_MISSION">
+        <xs:annotation>
+          <xs:documentation>2:HF:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ABSURDITÄT_beglaubigen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ABSURDITÄT_behaupten">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ABSURDITÄT_entgegentreten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Abtretung_der_Schönen_stehet_bevor">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Adoption">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AMÜSEMENT">
+        <xs:annotation>
+          <xs:documentation>2:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="An_einen_AUSWEGLOSEN_Ort_gelangen">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="An_Königswahl_teilnehmen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Änderung_der_EXISTENZFORM">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Änderung_der_EXISTENZFORM_stören">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ANEIGNUNG">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ANEIGNUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ANEIGNUNG_Beheben_angehen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Angebot_GEOPFERT_zu_werden">
+        <xs:annotation>
+          <xs:documentation>2:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Angebot_KÖNIG_zu_werden">
+        <xs:annotation>
+          <xs:documentation>2:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ANGST_auslösen">
+        <xs:annotation>
+          <xs:documentation>0:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ANGST_mit_ANGST_vergelten">
+        <xs:annotation>
+          <xs:documentation>0:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Anweisung_wörtlich_nehmen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_ABRATEN_von_der_Mission_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_ABSURDITÄT_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_ALTERNATIVEN_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Angebot_GEOPFERT_zu_werden_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Angebot_KÖNIG_zu_werden_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Anreiz_zu_GIER_und_Neid_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Anreiz_zum_AMÜSEMENT_reagieren">
+        <xs:annotation>
+          <xs:documentation>3:Hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Aufforderung_zu_KINDERMORD_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_ausgelöste_NEUGIER_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_BESTECHUNG_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_dem_Heimweg">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_EINDRUCKSVOLLE_Handlung_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_EINLADUNG_oder_Bestellung_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_GEHEIMSPRACHE_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_HEIRATSABSICHT_reagieren">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>      
+      <xs:enumeration value="Auf_Hilfsquelle_zurückgreifen">
+        <xs:annotation>
+          <xs:documentation>0:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Lösungsweg_für_FÄHRMANN_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Lösungsweg_für_HEIRATSWILLIGE_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Lösungsweg_für_leidendes_TIER_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Lösungsweg_für_SCHATZHÜTERN_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Lösungsweg_für_sonstiges_LEID_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_PROVOKATION_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_TABU_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_verabredetes_RENDEZVOUS_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_VERLOCKUNG_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_VERSUCHUNG_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Auf_VORHERSAGE_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_VORTÄUSCHEN_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Warnung_im_STICH_gelassen_zu_werden_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Warnung_vor_KANNIBALISMUS_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_Warnung_vor_VERGIFTUNG_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_WEISHEITEN_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auf_WERBEN_reagieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auferstehung_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auffälliges_GEGENSTANDES_habhaft_werden">
+        <xs:annotation>
+          <xs:documentation>2:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Aufklären_der_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auftrag_als_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auftrag_zum_Kochen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auftrag_zum_Unterhalten">
+        <xs:annotation>
+          <xs:documentation>1:F:f:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auftrag_zum_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Auftrag_zur_VERFÜHRUNG">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ausgeschilderte_TAT_zur_Kenntnis_nehmen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Ausplaudern">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AUSRÜSTUNG_als_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Aussetzung">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AUSSPIONIEREN_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Baumersteigen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bauwerk_errichten">
+        <xs:annotation>
+          <xs:documentation>1:F:h:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bedingungslose_Gehorsamkeit">
+        <xs:annotation>
+          <xs:documentation>0.H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Bedingungslose_Gehorsamkeit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bedrohung_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Begegnung">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Begehren_einer_Person_oder_eines_GEGENSTANDES">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Begleiter_gewinnen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHINDERUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHINDERUNG_durch_einen_Fluch">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:Hh:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHINDERUNG_durch_Verstümmelung">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:Hh:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Beiwohnung_mit_der_Schönen">
+        <xs:annotation>
+          <xs:documentation>0:Hh:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Beschaffung_der_AUSRÜSTUNG">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BESITZER_DES_OBJEKTES_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BESITZER_DES_OBJEKTES_herbeiholen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BESTECHUNG">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Bestrafung">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BETÄUBUNG">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BETÄUBUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Beuteteilen">
+        <xs:annotation>
+          <xs:documentation>1:Ff:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bis_auf_WIEDERBELEBEN_ruhen_lassen">
+        <xs:annotation>
+          <xs:documentation>2:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BLAMAGE_gelingt">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bösen_befreien">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bösen_einstellen">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BOTSCHAFTEN_verfälschen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BOTSCHAFTEN_versenden">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DEMÜTIGUNG">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DEMÜTIGUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Dilemma_lösen">
+        <xs:annotation>
+          <xs:documentation>1:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Eigene_Misshandlung_nachforschen">
+        <xs:annotation>
+          <xs:documentation>0:f:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>    
+            <xs:enumeration value="Einbrecher_begnadigen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="EINDRUCKSVOLLE_Handlung">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Eine_löst_andere_ABSURDITÄT_aus">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EINLADUNG_oder_Bestellung">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Elixier_als_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ende">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTFÜHRUNG">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTFÜHRUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTFÜHRUNG_Beheben_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Enthüllung_der_Wahrheit_durch_das_subtile_Mittel">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTLARVUNG">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTLARVUNG_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTMACHTUNG">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTMACHTUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Entsorgen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Enttäuschung_ausgelöst">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Erbschaft_teilen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Erlösung">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ERNTE_verarbeiten">
+        <xs:annotation>
+          <xs:documentation>3:H:h:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ERNTE_Verarbeiten_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Erträumen">
+        <xs:annotation>
+          <xs:documentation>0:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ERZÄHLEN_beenden">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ERZÄHLEN_beginnen">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EXTERNE_SEELE_Geheimnis_AUSSPIONIEREN">
+        <xs:annotation>
+          <xs:documentation>3:HF:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EXTERNEN_SEELE_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EXTERNEN_SEELE_vernichten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FALLE_stellen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+     <xs:enumeration value="FALLE_Stellen_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Familienzusammenführung">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Fehlende_männliche_oder_weibliche_NACHKOMMEN">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FEHLENDEN_Gegenstand_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FEHLENDEN_Gegenstand_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FELDER_bestellen">
+        <xs:annotation>
+          <xs:documentation>3: F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FELDER_Bestellen_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FERNLIEBE_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FERNLIEBE_wird_ausgelöst">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Fernseher_als_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FLUCH">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FLUCH_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FLUCHT">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FLUCHT_vorbereiten">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Flugzeugendes_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Arbeitsscheu_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Betrügerei_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Bigotterie_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Geiz_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Grobheit_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Klatsch_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_Kriminalität_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+       <xs:enumeration value="Folge_von_Vernachlässigung_der_Eltern_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_verweigerter_Gastfreundschaft_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folge_von_vorehelichem_Geschlechtsverkehr_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Folgen_eines_TABUbruches_rückgängig_machen">
+        <xs:annotation>
+          <xs:documentation>3:F:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Forderung_oder_Bitte_als_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FREIHEITSBERAUBUNG">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FREIHEITSBERAUBUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Fremdes_Gut_beschlagnahmen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Freundschaft_schließen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FRUCHT_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FRUCHT_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gastfreundlichkeit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Geänderte_EXISTENZFORM_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Geänderte_EXISTENZFORM_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Geänderte_IDENTITÄT_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Geburt_des_NACHKOMMENs">
+        <xs:annotation>
+          <xs:documentation>2:H:h:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gefahr_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gegen_ein_Tier_kämpfen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEHEIME_LIEBESBEZIEHUNG">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEHEIME_LIEBESBEZIEHUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEHEIMNIS_aufklären">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEHEIMNIS_Aufklären_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEHEIMSPRACHE_beibringen">
+        <xs:annotation>
+          <xs:documentation>2:HF:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gemenge_entkommen">
+        <xs:annotation>
+          <xs:documentation>1:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Geschick_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Geschlechtsumwandlung_erzielen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gespräche_belauschen">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GIER_und_Neid_auslösen">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gold_oder_geldproduzierenden_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Goldhaariges_Kind_zur_Welt_bringen">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Große_Mengen_essen">
+        <xs:annotation>
+          <xs:documentation>1:f:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Gutes_Benehmen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Handeln_als_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Handwerk_erlernen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hartes_Großes_Mächtiges_mit_Weichem_Kleinem_Schwachem_bewältigen">
+        <xs:annotation>
+          <xs:documentation>1:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Heilkunst_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HEILMITTEL_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HEILMITTEL_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Heimlich_beobachten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Heiraten">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HEIRATSABSICHT_kundtun">
+        <xs:annotation>
+          <xs:documentation>0:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Heiratszusage_erpressen">
+        <xs:annotation>
+          <xs:documentation>1:HF:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Held_erkennen">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Heldentat_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Herbeirufendes_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HERDE_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:f:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HERDE_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hilfe_erpressen">
+        <xs:annotation>
+          <xs:documentation>1:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hilfeversprechen_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hilfsquelle_greift_zurück">
+        <xs:annotation>
+          <xs:documentation>0:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hinaufsteigen">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hinuntersteigen">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hitze_entkommen">
+        <xs:annotation>
+          <xs:documentation>1:f:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hochzeit_am_Tag_der_Scheidung_feiern">
+        <xs:annotation>
+          <xs:documentation>1:f:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hochzeit_verschieben">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hohlen_Gegenstand_zum_Verstecken_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HOLZ_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HOLZ_Besorgen_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HUNGERSNOT">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HUNGERSNOT_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IDENTITÄT_ändern">
+        <xs:annotation>
+          <xs:documentation>2:H:h:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IDENTITÄT_beweisen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Im_STICH_gelassen_zu_werden_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Im_Verborgenen_lauern">
+        <xs:annotation>
+          <xs:documentation>1:HF:h:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="In_die_FALLE_gehen">
+        <xs:annotation>
+          <xs:documentation>3:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Information_aus_zweiter_Hand">
+        <xs:annotation>
+          <xs:documentation>0:HF:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Intensive_Erkundungsaktion">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Interesse_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Jemanden_im_STICH_lassen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Jemanden_in_Kannibalismus_verwickeln">
+        <xs:annotation>
+          <xs:documentation>0:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Jenseitswanderung_unternehmen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JUWELEN_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JUWELEN_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Kaiserschnitt">
+        <xs:annotation>
+          <xs:documentation>0:H:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Kälte_entkommen">
+        <xs:annotation>
+          <xs:documentation>1:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KANNIBALISMUS">
+        <xs:annotation>
+          <xs:documentation>3:f:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KANNIBALISMUS_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Keuschheit">
+        <xs:annotation>
+          <xs:documentation>0:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Kinderlosigkeit">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KINDERMORD_erforderlich">
+        <xs:annotation>
+          <xs:documentation>2:Ff</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Knochen_zusammentragen">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Komplikationsfreier_Flug">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KONTAKT_abbrechen">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KONTAKT_wiederherstellen">
+        <xs:annotation>
+          <xs:documentation>3:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Kraft_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KRANKHEIT">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KRANKHEIT_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Krankheit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Krieg_führen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Krisenursachen_ergründen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LAMAGE_bereiten">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Letzte_Gelegenheit_nützen">
+        <xs:annotation>
+          <xs:documentation>0:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Liebe_wird_ausgelöst">
+        <xs:annotation>
+          <xs:documentation>0:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Lohn_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Lösungsweg_für_FÄHRMANN_deuten">
+        <xs:annotation>
+          <xs:documentation>3:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Lösungsweg_für_HEIRATSWILLIGE_deuten">
+        <xs:annotation>
+          <xs:documentation>3:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Lösungsweg_für_leidendes_TIER_deuten">
+        <xs:annotation>
+          <xs:documentation>3:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Lösungsweg_für_SCHATZHÜTER_deuten">
+        <xs:annotation>
+          <xs:documentation>3:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Lösungsweg_für_sonstiges_LEID_deuten">
+        <xs:annotation>
+          <xs:documentation>2:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Loyalität_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Magischen_EINGRIFF_vorbereiten">
+        <xs:annotation>
+          <xs:documentation>3:Ff:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MARKIERUNGEN_anbringen">
+        <xs:annotation>
+          <xs:documentation>2:HF:hf:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MARKIERUNGEN_erkennen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MARKIERUNGEN_vorlegen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MASSENBEDROHUNG">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MASSENBEDROHUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Mehrere_Aufgaben_in_Folge_erledigen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Mehrere_Gegner_nacheinander_besiegen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Mehrlingsgeburt">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEINEID_erpressen">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEINEID_erpressen_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Menschliche_Körperteile_in_Edelmetall_verwandeln">
+        <xs:annotation>
+          <xs:documentation>0:Hh:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Menschliche_OPFERGABE_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Menschliches_Blut_als_HEILMITTEL_erforderlich">
+        <xs:annotation>
+          <xs:documentation>2:f:Ff</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MILCH_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MILCH_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Missachtung_der_LIEBE">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Missachtung_der_LIEBE_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Missgeburt">
+        <xs:annotation>
+          <xs:documentation>0:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MUSIKINSTRUMENT_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MUSIKINSTRUMENT_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Mut_zeigen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="N">
+        <xs:annotation>
+          <xs:documentation>Ein Nullwert (0)= nicht erfasstes Feld </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Nach_dem_eigenen_VORTÄUSCHEN_handeln">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Nahrungsvorrat_aufgebraucht">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NEUGIER_auslösen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Notwendiges_auf_wunderbare_Weise_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Numinose_Einmischung">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Numinose_Einmischung_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="NUTZTIER_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NUTZTIER_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Opfer_des_eigenen_VORTÄUSCHENs_werden">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OPFERGABE_verlangen">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PARALYSIERUNG">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PARALYSIERUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Personen_mit_der_BEHINDERUNG_gehen_einen_Bund_ein">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Personenschaden_anrichten">
+        <xs:annotation>
+          <xs:documentation>0:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PFLANZE_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PFLANZE_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PFÖRTNER_besänftigen">
+        <xs:annotation>
+          <xs:documentation>3:HF:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PFÖRTNER_entkommen">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PFÖRTNER_täuschen">
+        <xs:annotation>
+          <xs:documentation>3:HF:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Potenzielle_Beute_begnadigen">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Potenziellen_Feind_zum_Gastgeber_gewinnen">
+        <xs:annotation>
+          <xs:documentation>0:Hh:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Prächtige_Kleidung_und_Schmuck_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Prächtigen_Palast_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Priorisierung_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Proportionsphantasie">
+        <xs:annotation>
+          <xs:documentation>0:H:h:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Proviantproduzierenden_ZAUBERMITTEL_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Proviantproduzierenden_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PROVOKATION">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Rache_nehmen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Rat_mit_ALTERNATIVEN">
+        <xs:annotation>
+          <xs:documentation>"2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Rätsel_lösen">
+        <xs:annotation>
+          <xs:documentation>1:HF:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RÄTSELHAFTES_Gespräch_oder_Handlung">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RÄTSELHAFTES_Gespräch_oder_Handlung_aufklären">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Reiche_Erbschaft_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Reichtum_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Reitkünste_zeigen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REITTIER_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REITTIER_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REITTIER_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REITTIER_Geheimnis_AUSSPIONIEREN">
+        <xs:annotation>
+          <xs:documentation>3:HF:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RENDEZVOUS_verabreden">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RESPEKTLOSIGKEIT">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RESPEKTLOSIGKEIT_entgegentreten">
+        <xs:annotation>
+          <xs:documentation>2:H:h:Hh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Reue_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Richtiges_auswählen">
+        <xs:annotation>
+          <xs:documentation>1:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Richtiges_erlangen">
+        <xs:annotation>
+          <xs:documentation>1:F:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sachschaden_anrichten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sachverhalt_aus_der_Vergangenheit_aufklären">
+        <xs:annotation>
+          <xs:documentation>1:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Schatz_finden">
+        <xs:annotation>
+          <xs:documentation>1:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Schicksalsbestimmender_Weisung_folgen">
+        <xs:annotation>
+          <xs:documentation>1:HF:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCHLAF">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCHLAF_unterbrechen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Schlaf_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Schlußfolgerung_als_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCHÖNE_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCHÖNE_herbeiholen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCHWEIGEPFLICHT_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCHWEIGEPFLICHT_verhängen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SELTENEN_Gegenstand_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SELTENEN_Gegenstand_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_abseilen_LASSEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_auf_Eindringlinge_einlassen">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_einem_magischen_EINGRIFF_unterziehen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_niederlassen">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_oder_Andere_hochziehen_LASSEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_oder_andere_tragen_LASSEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sich_ZURÜCKZIEHEN">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SONSTIGES_beheben">
+        <xs:annotation>
+          <xs:documentation>3: F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SONSTIGES_Beheben_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SONSTIGES_herstellen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SONSTIGES_kaufen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SONSTIGES_verkaufen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sonstiges_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sorge_um_Freikaufsbedürftige">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sorge_um_Hilfsbedürftige">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sorge_um_Hungernde_oder_Durstige">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sorge_um_Mitleidsbedürftige">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sorge_um_Pflegebedürftige">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sorge_um_Schutzbedürftige">
+        <xs:annotation>
+          <xs:documentation>1:F:h:H:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STALL_ausmisten">
+        <xs:annotation>
+          <xs:documentation>3: F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STALL_Ausmisten_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STERBEN">
+        <xs:annotation>
+          <xs:documentation>0:f:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STERBEN">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+       <xs:enumeration value="STERBEN_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STERBEN_Beheben_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+       <xs:enumeration value="Stifter_oder_Helfer_gewinnen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Strafvollstreckenden_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STREIT_schlichten">
+        <xs:annotation>
+          <xs:documentation>3:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STREIT_Schlichten_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Suizidversuch_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Surrogat_unterschieben">
+        <xs:annotation>
+          <xs:documentation>1:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Behälter_nicht_öffnen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Feuer_darf_nicht_erlöschen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Frist_nicht_überziehen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Gegenstand_nicht_weitergeben">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Haus_nicht_verlassen_dürfen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_keine_Eindringlinge_einlassen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_keine_Pause_machen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Land_nicht_betreten">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Limit_nicht_überziehen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_nicht_einschlafen_dürfen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_nicht_küssen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Schweigegebot">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_sich_von_Etwas_fernhalten">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_sich_von_Jemandem_fernhalten">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Sonstiges">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Tier_nicht_töten">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Tierhaut_nicht_verbrennen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABU_Türe_nicht_öffnen_dürfen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tapferkeit_beweisen">
+        <xs:annotation>
+          <xs:documentation>1:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tarnung_gewährendes_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TAT_ausschildern">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Testnotwendigkeit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tier_als_Schutzgeist_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tiere_gegeneinander_kämpfen_lassen">
+        <xs:annotation>
+          <xs:documentation>1:F:f:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tiere_HÜTEN">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tiere_HÜTEN_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tiere_MÄSTEN">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tiere_MÄSTEN_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tierjunges_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TIERKÖRPERTEIL_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TIERKÖRPERTEIL_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Tod_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TODESAUFTRAG">
+        <xs:annotation>
+          <xs:documentation>2:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TODESAUFTRAG_entkommen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Toten_als_lebend_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TÖTUNG">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="TÖTUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRAUM_vom_sozialen_Aufstieg">
+        <xs:annotation>
+          <xs:documentation>2:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRAUM_wird_wahr">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Treue_Helfer_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Treue_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Treuen_Helfer_finden">
+        <xs:annotation>
+          <xs:documentation>2:HF:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Truhe_herstellen">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Überraschende_positive_Wendung">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Überrascht_werden_oder_geraten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Um_eine_Frau_WERBEN">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Um_einen_Auftrag_WERBEN">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Um_einen_Mann_WERBEN">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Um_Gegenleistung_bitten">
+        <xs:annotation>
+          <xs:documentation>1:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unerträgliche_Faulheit">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unerträgliche_Schreckhaftigkeit">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unerträgliche_Unersättlichkeit">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unerträgliche_Ungeheuerlichkeit">
+        <xs:annotation>
+          <xs:documentation>0:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UNGEHEUER_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UNGEHEUER_herbeiholen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ungewollte_Verlobung_akzeptieren">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ungewünschtes_Wesen_beseitigen">
+        <xs:annotation>
+          <xs:documentation>0:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Universellen_ZAUBERMITTEL_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Universellen_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unruhe_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unterkommen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unwissenheit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unzufriedenheit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ursache_des_Altaussehens_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ursache_des_unstillbaren_Dursts_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Ursache_des_unstillbaren_Hungers_deuten">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAMPIRISMUS">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAMPIRISMUS_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERBANNUNG">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERBANNUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Verbot_als_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VEREINBARUNG">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="VEREINBARUNG_auflösen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VEREINBARUNG_einhalten">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERFOLGUNG">
+        <xs:annotation>
+          <xs:documentation>2:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERFOLGUNG_entkommen">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERFOLGUNG_stören">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERGIFTUNG">
+        <xs:annotation>
+          <xs:documentation>3:hf:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERGIFTUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:HF:hf:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLEUMDUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:HF:hf:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLEUMDUNG_bei_Kindstötung">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLEUMDUNG_bei_Missgeburt">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLEUMDUNG_bei_Schädigung">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLEUMDUNG_bei_Untreue">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Verlobung_arrangieren">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLOCKUNG">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLUST_des_Schatzes">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLUST_von_Tieren_Früchten_Ernte_Essen_Futter_usw">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Verlust_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERLUSTursache_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERMISSEN_der_Angehörige">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERMISSEN_der_Angehörige_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Vermittlung">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERSCHLINGEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERSCHLINGEN_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+ <xs:enumeration value="Verstecken_als_Rettung">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERSTECKWETTE">
+        <xs:annotation>
+          <xs:documentation>2:Ff</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERSTEINERUNG">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERSTEINERUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERSUCHUNG">
+        <xs:annotation>
+          <xs:documentation>2:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="Vertrauen_beweisen">
+        <xs:annotation>
+          <xs:documentation>1:Ff:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERTREIBUNG">
+        <xs:annotation>
+          <xs:documentation>2:h:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VERTREIBUNG_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VOGEL_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VOGEL_herbeiholen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Von_einem_AUSWEGLOSEN_Ort_entkommen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Vorgang_deuten">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_als_Fluch">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_beheben">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_des_Aufenthaltsortes">
+        <xs:annotation>
+          <xs:documentation>2:F:f:HF:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_erforderlich">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Gefahr_vom_Anziehen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Gefahr_vom_Juwelier">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Gefahr_vom_Tier">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Gefahr_vom_Wild">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Gefahr_von_Angehörigen">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Gefahr_von_Essen_und_Trinken">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_subtiler_Eigenschaft">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_subtiler_Identität">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_subtiles_Geschmak">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_tritt_ein">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_ungewünschter_Eheschliessung">
+        <xs:annotation>
+          <xs:documentation>2:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORHERSAGE_Unglück_von_der_Kleidung">
+        <xs:annotation>
+          <xs:documentation>2:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORTÄUSCHEN_ABSURDITÄT_zu_glauben">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VORTÄUSCHEN_eingestehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wache_halten">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wachsamkeit_oder_Anwesenheit_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WAFFE_oder_ZAUBERMITTEL_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WAFFE_oder_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wahl_als_ABSURDITÄT">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WASSERMANGEL">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WASSERMANGEL_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WASSERQUELLE_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WASSERQUELLE_herbeiholen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wechsel_der_IDENTITÄT_eingestehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Weg_zum_Paradies_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wegweisung_erhalten">
+        <xs:annotation>
+          <xs:documentation>0:HF:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wegweisung_erpressen">
+        <xs:annotation>
+          <xs:documentation>1:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wegweisung_mit_ALTERNATIVEN">
+        <xs:annotation>
+          <xs:documentation>2:HF:hf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WEIHE_anordnen">
+        <xs:annotation>
+          <xs:documentation>2:Ff</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WEIHE_vollziehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WEISHEITEN_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Weiterverweisung_an_anderen_Stifter_oder_Helfer">
+        <xs:annotation>
+          <xs:documentation>0:HF</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTBEWERB">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTBEWERB_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTE_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTE_um_die_VERFÜHRUNG_der_Frau">
+        <xs:annotation>
+          <xs:documentation>2:F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTE_zwischen_Glück_und_Verstand">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTKAMPF">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTKAMPF_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTLAUF">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WETTLAUF_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WIEDERBELEBEN">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WIEDERBELEBEN_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wiederbelebungsfähiges_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wiedergutmachung_erzielen">
+        <xs:annotation>
+          <xs:documentation>1:HF:hf:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WILD_besorgen">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WILD_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wissen_VORTÄUSCHEN">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wunderbare_EMPFÄNGNIS">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wundermittel_zur_EMPFÄNGNIS_erfassen">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wundermittel_zur_EMPFÄNGNIS_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wundermittel_zur_EMPFÄNGNIS_suchen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Wunsch_erfüllendes_ZAUBERMITTEL_erhalten">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zauberkunst_erlernen">
+        <xs:annotation>
+          <xs:documentation>1:F:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zauberkunstfertigkeit_gewährleisten">
+        <xs:annotation>
+          <xs:documentation>1:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZAUBERMITTEL_AUSRÜSTUNG_oder_WAFFE_ausprobieren">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+            <xs:enumeration value="ZAUBERMITTEL_AUSRÜSTUNG_oder_WAFFE_austauschen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZAUBERMITTEL_AUSRÜSTUNG_oder_WAFFE_einsetzen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZAUBERMITTEL_Geheimnis_AUSSPIONIEREN">
+        <xs:annotation>
+          <xs:documentation>3:HF:hf:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZOLLERHEBUNG_vollstrecken">
+        <xs:annotation>
+          <xs:documentation>3:F:f:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZOLLERHEBUNG_Vollstrecken_angehen">
+        <xs:annotation>
+          <xs:documentation>2:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZORNWETTE">
+        <xs:annotation>
+          <xs:documentation>2:F:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zu_Beauftragungen_anregen">
+        <xs:annotation>
+          <xs:documentation>0:f</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zug_von_Reisenden_oder_Karavane_folgen">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zum_Schlafen_bringen">
+        <xs:annotation>
+          <xs:documentation>1:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zur_Welt_kommen">
+        <xs:annotation>
+          <xs:documentation>0:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZURÜCKZIEHEN_beheben">
+        <xs:annotation>
+          <xs:documentation>2:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zusammenbringen_aller_Handlungsträger">
+        <xs:annotation>
+          <xs:documentation>0:H</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zuschnappendes_Hindernis_überwinden">
+        <xs:annotation>
+          <xs:documentation>1:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZWANGSEHE_Drohung">
+        <xs:annotation>
+          <xs:documentation>2:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZWANGSEHE_Drohung_beheben">
+        <xs:annotation>
+          <xs:documentation>3:F:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Zweikampf">
+        <xs:annotation>
+          <xs:documentation>1:HF:H:h</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
 
 </xs:simpleType>
 </xs:schema>
-
